@@ -1,1 +1,27 @@
+<main id="app">
+  <h1 id="title">Quiz</h1>
+
+  <section id="quizBox">
+    <p id="prompt"></p>
+    <div id="options"></div>
+  </section>
+
+  <button id="nextBtn">Siguiente</button>
+</main>
+
+<script>
+  const params = new URLSearchParams(location.search);
+  const id = params.get("id") || "q01";
+
+  // ✅ Le dice a app.js qué cargar
+  window.QUIZ_CONFIG = {
+    source: `./data/quizzes/${id}.json`,
+    mode: "quiz",
+    quizId: id
+  };
+</script>
+
+<script src="./src/scoring.js"></script>
+<script src="./src/report.js"></script>
+<script src="./src/app.js"></script>
 
