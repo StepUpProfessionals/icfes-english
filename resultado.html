@@ -1,1 +1,16 @@
+<div id="resultBox"></div>
+
+<script>
+  const data = JSON.parse(localStorage.getItem("lastResult") || "{}");
+  const box = document.getElementById("resultBox");
+
+  if (!data.total) {
+    box.textContent = "No hay resultados aún.";
+  } else {
+    box.innerHTML = `
+      <h1>Resultado</h1>
+      <p><strong>Correctas:</strong> ${data.correct} de ${data.total}</p>
+    `;
+  }
+</script>
 
