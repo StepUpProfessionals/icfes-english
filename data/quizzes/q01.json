@@ -1,1 +1,16 @@
+{
+  "id": "q01",
+  "title": "Reading 1: Signs & Notices",
+  "questions": [
+    {
+      "id": "q01-1",
+      "skill": "reading",
+      "prompt": "Sign: 'Keep door closed.' What should you do?",
+      "options": ["Open the door", "Close the door", "Paint the door", "Lock the door"],
+      "answer": 1,
+      "explanation": "Keep closed = maintain it closed.",
+      "tip": "KEEP + adjective = maintain a condition."
+    }
+  ]
+}
 
