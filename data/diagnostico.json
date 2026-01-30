@@ -1,1 +1,16 @@
+{
+  "id": "diag-icfes",
+  "title": "Diagnóstico ICFES English",
+  "questions": [
+    {
+      "id": "d1",
+      "skill": "reading",
+      "prompt": "Read: 'No parking on weekends.' What does it mean?",
+      "options": ["You can park on weekends", "You cannot park on weekends", "Parking is free", "Parking is only at night"],
+      "answer": 1,
+      "explanation": "No parking = you cannot park.",
+      "tip": "Look for negative signs: NO + noun/verb."
+    }
+  ]
+}
 
