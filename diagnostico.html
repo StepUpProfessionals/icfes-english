@@ -1,1 +1,23 @@
+<main id="app">
+  <h1>Diagnóstico ICFES English</h1>
+
+  <section id="quizBox">
+    <p id="prompt"></p>
+    <div id="options"></div>
+  </section>
+
+  <button id="nextBtn">Siguiente</button>
+</main>
+
+<script>
+  // ✅ Le dice a app.js qué cargar
+  window.QUIZ_CONFIG = {
+    source: "./data/diagnostico.json",
+    mode: "diagnostico"
+  };
+</script>
+
+<script src="./src/scoring.js"></script>
+<script src="./src/report.js"></script>
+<script src="./src/app.js"></script>
 
